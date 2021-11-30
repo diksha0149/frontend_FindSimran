@@ -7,6 +7,7 @@ import UpcomingContest from "../components/Homepage/Static/UpcomingContest";
 import CareerOpportunities from "../components/Homepage/Static/CareerOpportunities";
 import StudyResources from "../components/Homepage/Static/StudyResources";
 import codingProblems from "../components/Homepage/Static/codingProblems";
+
 import PostScream from "../components/Homepage/Author/PostScream";
 import AuthorScreams from "../components/Homepage/Author/AuthorScreams";
 
@@ -45,6 +46,11 @@ export class home extends Component {
                   <Route
                     exact
                     path="/authorScreams"
+                    component={AuthorScreams}
+                  />
+                  <Route
+                    exact
+                    path="/doubtExchange"
                     component={AuthorScreams}
                   />
                 </div>

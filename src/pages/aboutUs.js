@@ -1,5 +1,7 @@
 import { TranslateIcon } from '@heroicons/react/solid';
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom';
+import doubtExchange from './doubtExchange';
 
 const abt = {  
       alignItems: "center",
@@ -11,6 +13,19 @@ const abt = {
       padding: "10px",  
       fontFamily: "Arial"  
     };  
+  const mystyle={
+      margin:"50px",
+      color:"#2563EB",
+      fontSize:"20px",
+      justifyContent:"justified"
+  } 
+  const main={
+      display:"inline-flex",
+      width:"100%",
+      alignItems:"center",
+      justifyContent:"space-evenly",
+      position:"relative"
+  } 
 
 export class aboutUs extends Component {
     render() {
@@ -18,7 +33,7 @@ export class aboutUs extends Component {
             <div  style={{display: 'block',position:"absolute",  justifyContent:'center', alignItems:'center', height: '100vh', width:"100%", textAlign:"center"}}>
                 <div className="about" style={{margin:'50px'}}>
                <h1 style={{ fontWeight: 'bold' },{fontSize : "40px"}}>About FindSimran</h1>
-               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold'}}>Welcome to FindSimran</span>, the peer to peer network of nerds, where you can find your coding partner or search relevant projects to work on.</p>
+               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold', color:"#2563EB"}}>Welcome to FindSimran</span>, the peer to peer network of nerds, where you can find your coding partner or search relevant projects to work on.</p>
                </div>
 
 
@@ -31,16 +46,26 @@ export class aboutUs extends Component {
 
                <div  className="mision" style={{margin:'50px'}}>
                <h1 style={{ fontWeight: 'bold' },{fontSize : "30px"}}>Mission</h1>
-               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold'}}>The mission of FindSimran is simple</span>: connect Coders globally to make them more productive and successful.</p>
+               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold', color:"#2563EB"}}>The mission of FindSimran is simple</span>: connect Coders globally to make them more productive and successful.</p>
                </div>
 
 
                <div  className="developers" style={{margin:'50px'}}>
                <h1 style={{ fontWeight: 'bold' },{fontSize : "30px"}}>Who Are We?</h1>
-               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold'}}>FindSimran</span> is an initiative started in october 2021 by <span style={{fontWeight:'bold'}}>Prajal Patidar</span> and <span style={{fontWeight:'bold'}}>Diksha Patidar</span> with an aim of easing to find peer programmers
-                   to make their ideas transform into code.</p>
+               <p style={{fontSize : "20px"}}><span style={{fontWeight:'bold', color:"#2563EB"}}>FindSimran</span> is an initiative started in october 2021 by <span style={{fontWeight:'bold', color:"#2563EB"}}>Prajal Patidar</span> and <span style={{fontWeight:'bold', color: '#2563EB'}}>Diksha Patidar</span> with an aim of easing to find peer programmers
+                   to transform their ideas into code.</p>
                </div>
+               <div style={{background:"#F3F4F6", width:"100%",height:"40%", padding:"30px"}}>
+                 <p style={{fontSize : "23px", color:"black"}}>For more information about our Website</p>
+                 <div style={main}>
+                     <div style={mystyle}><Link to="/doubtExchange">Queries </Link></div>
+                     <div style={mystyle}><Link to="/doubtExchange">Contact us</Link></div>
+                     <div style={mystyle}><Link to="/doubtExchange">searching.....</Link></div>
+                     
+                 </div>
+                </div>
             </div>
+           
         )
     }
 }
