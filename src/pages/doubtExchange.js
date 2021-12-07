@@ -1,69 +1,66 @@
+import React, { useState } from 'react';
+import { Data } from './QnA';
 
-import React, { Component } from 'react';
-import Screenshot from './images/editvote.png'
 import {
-    QuestionMarkCircleIcon,
-    ArrowRightIcon
-} from "@heroicons/react/solid";
+    ChevronUpIcon,
+    ChevronDownIcon
+  } from "@heroicons/react/solid";
 
 
 
-export class doubtExchange extends Component {
-    render() {
-        return (
-                   <div className="flex flex-col absolute justify-center items-center m-50 p-10 w-100% bg-center">
-                    <div className=" relative p-5 bg-grey mt-5 rounded-t-2xl shadow-sm block justify-center items-center">
-                        
-                        <p className="flex items-center font-25px py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5 mr-2"/>How many screams we can post?</p>
-                        <li className="justify-center items-center py-1">
-                        You can post any required number of Screams</li>
-                        <p className="flex  items-center py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5"/>How can we find our peer partner?</p>
-                         <li className="py-1">You can find your Simran after following few steps : <br />
-                         <span>-post your scream with required description and skills</span><br />
-                         <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                         <span>-wait for the votes</span><br />
-                         <span>-go through votes and contact them for collaboration via email or  Phone no.</span><br />
-                        </li>
-                        <p className="flex items-center py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5"/>How many features are present in website?</p>
-                        <li className="justify-center items-center py-2">
-                        The features are:Post Scream where you  can post a scream to find a partner,<br/>
-                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                                        Vote:you can vote on others screams to be their peer partner,<br/> 
-                                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                                        Upcoming Contest: you get updates of contest which held on various coding  platform,<br/>
-                                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                                        Projects where you can also go through projects sections where existing projects are present, you got an idea after lookings others project,<br/>
-                                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                                        Coding Problems where you can also solve coding problems topic wise,<br/>
-                                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                                        Study Resources where you can get access to various resources which are really proved helpful<br/> 
-                                        <img src={Screenshot} width="40%" height="20px" margin="50%" align-center/>
-                         </li>
-                        <p className="flex items-center py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5"/>Can we edit our scream after posting?</p>
-                          <img src={Screenshot} width="40%" height="20px" />  
-                        <li className="justify-center items-center py-1">
-                        Yes, you can edit your scream.</li>
-                        <p className="flex items-center py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5"/>Can we edit our Vote after posting?</p>
-                            
-                        <li className="justify-center items-center py-1">
-                        Yes, you can definitely edit your vote after posting.</li>
-                        <img src={Screenshot}  width="40%" height="20px"/>
-                        <p className="flex items-center py-1">
-                        <QuestionMarkCircleIcon className="w-5 h-5"/>How many votes we can post?</p>
-                        <li className="justify-center items-center py-1">
-                        You can post any required number of Votes,their is no limit.</li>
-                        <img src={Screenshot} width="40%" height="20px"/>
-                        
-                    </div>
-                </div>
-        )
+const DoubtExchange = () => {
+  const [clicked, setClicked] = useState(false);
 
+  const toggle = index => {
+    if (clicked === index) {
+      
+      return setClicked(null);
     }
-}
 
-export default doubtExchange
+    setClicked(index);
+  };
+
+  return (
+   
+      <div className="mt-5">
+          {Data.map((item, index) => {
+            return (
+              <>
+              <div className="flex flex-col justify-center items-center bg-center ">
+                <div 
+                  className="relative p-5 bg-grey rounded-t-2xl shadow-sm block justify-left items-center border-2   sm:w-2/4 inline-flex cursor-pointer"
+                onClick={() => toggle(index)} key={index}>
+                  <h1><span className="mr-5 font-bold">{item.id}</span>{item.question}</h1>
+                  <span className="flex relative justify-right mr-0 ml-auto items-right block">{clicked === index ? <ChevronDownIcon
+                   width={21}
+                   height={21}
+                    className="flex flex-col justify-left items-center  bg-center text-blue-600"
+                  /> : <ChevronUpIcon 
+                   width={21}
+                   height={21}
+                    className="text-blue-600 relative inline-flex justify-right items-right  cursor-pointer"
+                  />}</span>
+                </div>
+                </div>
+                {clicked === index ? (
+                   <div className="flex flex-col justify-center items-center bg-center ">
+                  <div className="relative p-5 bg-grey rounded-t-2xl shadow-sm block justify-left items-center border-2   sm:w-2/4 ">
+                    <p className="ml-10">{item.answer}</p>
+                    <div>
+                    {
+                    Data.map((item, i) => {
+                        return(<img className="flex flex-col justify-center items-center bg-center w-full h-2/4 p-2" src={item.url[i]}></img>)
+                    })}
+                    </div>
+                  </div>
+                  </div>
+                ) : null}
+              </>
+            );
+          })}
+          </div>
+       
+  );
+};
+
+export default DoubtExchange;
