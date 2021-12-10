@@ -118,17 +118,17 @@
                 //         <QuestionMarkCircleIcon className="w-5 h-5"/>How many features are present in website?</p>
                 //         <li className="justify-center items-center py-2 ml-1">
                 //         The features are:<br/>
-                //         <span className="font-bold"> Post Scream</span> where you  can post a scream to find a partner,<br/>
+                //         <span className="font-bold"> Post Scream where you  can post a scream to find a partner,<br/>
                 //         <img src={Screenshot} width="40%" height="20px" margin="50%"  className="w-11/12 flex items-center flex items-center border-2 border-red-600 my-2 m-auto m-auto"/>
-                //         <span className="font-bold">Vote:</span>you can vote on others screams to be their peer partner,<br/> 
+                //         <span className="font-bold">Vote: you can vote on others screams to be their peer partner,<br/> 
                 //                        <div className="w-100%"> <img src={Screenshot} width="40%" height="20px" margin="50%" align-center className="w-11/12 flex items-center border-2 border-red-600 my-2 m-auto items-center"/></div>
-                //                         <span className="font-bold">Upcoming Contest:</span> you get updates of contest which held on various coding  platform,<br/>
+                //                         <span className="font-bold">Upcoming Contest: you get updates of contest which held on various coding  platform,<br/>
                 //                         <img src={Screenshot} width="40%" height="20px" margin="50%" align-center className="w-11/12 flex items-center border-2 border-red-600 my-2 m-auto"/>
-                //                         <span className="font-bold">Projects:</span> where you can also go through projects sections where existing projects are present, you got an idea after lookings others project,<br/>
+                //                         <span className="font-bold">Projects: where you can also go through projects sections where existing projects are present, you got an idea after lookings others project,<br/>
                 //                         <img src={Screenshot} width="40%" height="20px" margin="50%" align-center className="w-11/12 flex items-center border-2 border-red-600 my-2 m-auto"/>
-                //                         <span className="font-bold">Coding Problems:</span> where you can also solve coding problems topic wise,<br/>
+                //                         <span className="font-bold">Coding Problems: where you can also solve coding problems topic wise,<br/>
                 //                         <img src={Screenshot} width="40%" height="20px" margin="50%" align-center className="w-11/12 flex items-center border-2 border-red-600 my-2 m-auto"/>
-                //                         <span className="font-bold">Study Resources:</span> where you can get access to various resources which are really proved helpful<br/> 
+                //                         <span className="font-bold">Study Resources: where you can get access to various resources which are really proved helpful<br/> 
                 //                         <img src={Screenshot} width="40%" height="20px" margin="50%" align-center className="w-11/12 flex items-center border-2 border-red-600 my-2 m-auto"/>
                 //          </li>
                 //         <p className="flex items-center py-1 mr-2">
