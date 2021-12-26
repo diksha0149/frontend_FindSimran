@@ -44,8 +44,8 @@ export const Data = [
       //url:['aaaaaa','xxxxx','ccccc']
     },
     {id:'Q6',
-      question: 'How many features are present in website?',
-      answer: 'The features are: Post Scream where you  can post a scream to find a partner,Vote: you can vote on others screams to be their peer partner,Upcoming Contest: you get updates of contest which held on various coding  platform, Projects: where you can also go through projects sections where existing projects are present, you got an idea after lookings others project,Coding Problems: where you can also solve coding problems topic wise, Study Resources: where you can get access to various resources which are really proved helpful',
+      question: 'What are the features present in website?',
+      answer: 'The features are: Post Scream where you  can post a scream to find a partner, Vote: you can vote on others screams to be their peer partner,  Upcoming Contest: you get updates of contest which held on various coding  platforms, Projects: where you can also go through projects sections where existing projects are present, you got an idea after lookings others project, Coding Problems: where you can solve coding problems topic wise, Study Resources: where you can get access to various resources which are really proved helpful',
       url:['https://drive.google.com/file/d/1LhwTi_Ezo9PHPskFyjtuGC9Cns2ogvvt/view?usp=sharing',
       'https://drive.google.com/file/d/1LhwTi_Ezo9PHPskFyjtuGC9Cns2ogvvt/view?usp=sharing',
       'https://drive.google.com/file/d/1LhwTi_Ezo9PHPskFyjtuGC9Cns2ogvvt/view?usp=sharing',
@@ -54,8 +54,8 @@ export const Data = [
       //url:['aaaaaa','xxxxx','ccccc']
     },
     {id:'Q7',
-      question: 'Can we edit our scream after posting?',
-      answer: 'Yes, you can edit your scream.',
+      question: 'How can we contact our Peer Partner?',
+      answer: 'First, you have to accept the request of your partner,then you can contact them from Message section.',
       url:['']
       // url:['https://drive.google.com/file/d/1LhwTi_Ezo9PHPskFyjtuGC9Cns2ogvvt/view?usp=sharing',
       // 'https://drive.google.com/file/d/1LhwTi_Ezo9PHPskFyjtuGC9Cns2ogvvt/view?usp=sharing',
